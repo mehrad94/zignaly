@@ -1,2 +1,2 @@
-# zignaly
+# binance
 Created with CodeSandbox
