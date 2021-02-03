@@ -12,22 +12,23 @@ const sendSignal = async () => {
   const resSendSignal = await axios.post(
     "https://zignaly.com/api/signals.php",
     {
-      key: "75e51daf22242349d46f88e633a3e35d",
+      key: "c96a35053c62cfabe5dc3df2c75d7144",
       type: "entry",
       exchange: "binance",
       exchangeAccountType: "futures",
       side: "long",
-      market: "QTUMUSDT",
-      positionSizePercentage: "1",
-      leverage: 1,
-      price: "3.395",
-      takeProfitPrice1: "3.405",
-      stopLossPrice: "3.270",
+      market: "ONTUSDT",
+      positionSizePercentage: "90",
+      leverage: 20,
       orderType: "stop-limit",
-      buyStopPrice: "3.395"
+      buyStopPrice: "0.6317",
+      price: "0.6318",
+      takeProfitPrice1: "0.6350",
+      stopLossPrice: "0.6250"
     }
   );
+
   console.log({ resSendSignal: resSendSignal.status });
 };
-//S
+//Sss
 sendSignal();
